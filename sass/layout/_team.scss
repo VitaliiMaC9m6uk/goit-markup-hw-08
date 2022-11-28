@@ -1,0 +1,97 @@
+.team {
+  background-color: #f5f4fa;
+  @media screen and (max-width:767px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .one-of-team:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  }
+  
+
+  &__title {
+    color: $title-color;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  &__text {
+    margin-bottom: 16px;
+  }
+  &__text,
+  &__name {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  &__name {
+    color: $title-color;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+  }
+
+  .one-of-team {
+    background-color: $white-color;
+    border-radius: 0px 0px 4px 4px;
+
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  
+  .action {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 24px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .list-icon:not(:last-child),
+  .list-footer:not(:last-child) {
+    margin-right: 10px;
+  }
+  .link-icon:hover .icon-social,
+  .link-icon:focus .icon-social {
+    fill: $white-color;
+  }
+  .link-icon:hover,
+  .link-footer:hover,
+  .link-icon:focus,
+  .link-footer:focus {
+    background-color: $blue-color;
+  }
+  .icon-social {
+    height: 20px;
+    width: 20px;
+    fill: $white-color;
+  }
+
+  .icon-social {
+    fill: $icon-bg-color;
+
+    transition: fill 250ms $time-function;
+  }
+  .link-icon {
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms $time-function;
+  }
+}

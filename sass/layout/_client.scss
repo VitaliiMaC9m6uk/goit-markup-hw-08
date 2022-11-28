@@ -1,0 +1,63 @@
+.client {
+    @media screen and (max-width:767px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+
+        &__title{
+            font-size: 28px;
+            line-height: 1.18;
+
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        &__link{
+            
+            width: 210px;
+        }
+    }
+    &__title {
+    font-weight: 700;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;    
+    
+    padding: 0;
+  }
+  &__icon {
+    fill: $icon-bg-color;
+    width: 106px;
+    height: 60px;
+
+    transition: fill 250ms $time-function;
+  }
+  &__action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__link {
+    display: flex;
+    border: 1px solid #afb1b8;
+    height: 92px;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+    transition: border-color 250ms $time-function;
+  }
+  &__link:hover,
+  &__link:focus {
+    border-color: $blue-color;
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: $blue-color;
+  }
+}

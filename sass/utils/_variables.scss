@@ -1,0 +1,25 @@
+$blue-color: #2196F3;
+$title-color:#212121;
+$text-color:#757575;
+$black-logo-color:#000000;
+$white-color:#FFFFFF;
+$bg-color:#2F303A;
+$footer-mail-color:rgba(255, 255, 255, 0.6);
+$button-bg-port-color:#F5F4FA;
+$icon-bg-color:#AFB1B8;
+$font-roboto: 'Roboto',sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+:root {
+    --logo-blue-color: #2196F3;
+    --title-color: #212121;
+    --text-color: #757575;
+    --logo-black-color: #000000;
+    --white-color: #FFFFFF;
+    --bg-color: #2F303A;
+    --footer-mail: rgba(255, 255, 255, 0.6);
+    --button-bg-port: #F5F4FA;
+    --icon-color: #AFB1B8;
+
+    --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

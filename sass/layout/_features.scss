@@ -1,0 +1,39 @@
+@media screen and (min-width:100px){
+    .features{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__icon {
+        height: 70px;
+        width: 70px;
+        }
+        &__icon-border {
+        border: none;
+        border-radius: 4px;
+        background-color: $button-bg-port-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+    
+        margin-bottom: 30px;
+        }
+        &__title {
+        color: $title-color;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-align: center;
+    
+        margin-top: 0;
+        margin-bottom: 10px;
+        }
+        &__text {
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    
+        margin-top: 0;
+        margin-bottom: 30px;
+        }
+    }
+}
