@@ -15,7 +15,16 @@ body {
     color: $text-color;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 14px;    
+}
+.decoration-link {
+    text-decoration: none;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @media screen and (min-width:480px){
         width:480px;
@@ -26,15 +35,6 @@ body {
     @media screen and (min-width:1200px){
         width:1200px;
     }
-}
-.decoration-link {
-    text-decoration: none;
-}
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 .visually-hidden {
     position: absolute;
@@ -47,4 +47,7 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+.current{
+    color: $blue-color;
 }

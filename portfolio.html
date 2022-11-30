@@ -15,16 +15,19 @@
     />
   </head>
   <body>
-    <header class="head__border">
-      <div class="container head__container">
+    <header class="head">
+      <div class="container head__container ">
         <div class="head__logo">
           <a class="decoration-link logo" href="./index.html"
             ><span class="logo--blue">Web</span><span class="logo--black">Studio</span></a
           >
-          <nav>
+          <button class="head__menu"  type="bytton"><svg class="icon-menu">
+            <use href="./images/icons.svg#icon-menu-page-header"></use>
+          </svg></button>          
+          <nav class="nav__desktop">
             <ul class="list site-nav head__list">
               <li class="head__link">
-                <a class="link decoration-link" href="./index.html">Студія</a>
+                <a class="link decoration-link " href="./index.html">Студія</a>
               </li>
               <li class="head__link">
                 <a class="link decoration-link current" href="./portfolio.html">Портфоліо</a>
@@ -35,7 +38,7 @@
             </ul>
           </nav>
         </div>
-        <ul class="list head__list">
+        <ul class="list head__list mail-menu">
           <li class="head__mail">
             <a class="link mail-link decoration-link" href="mailto:info@devstuio.com"
               ><svg class="icon-mail">
@@ -53,6 +56,48 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="head__backdrop is-hidden">
+        <div class="menu__container">
+          <button class="menu__btn-close" type="button" data-modal-close>
+            <svg class="menu__icon-close">
+              <use href="./images/icons.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <nav class="">
+            <ul class="menu__section-list">
+              <li class="list menu__link">
+                <a class="menu__section decoration-link current" href="./index.html">Студія</a>
+              </li>
+              <li class="list menu__link">
+                <a class="menu__section decoration-link current" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="list menu__link">
+                <a class="menu__section decoration-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        
+          <ul class="menu__mail-phone">
+            <li class="list">
+              <a class="decoration-link menu__mail" href="mailto:info@devstuio.com"
+                >info@devstudio.com</a>
+            </li>
+            <li class="list">
+              <a class="decoration-link menu__phone" href="tel:+380961111111">              
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+      
+          <div class="menu__social">
+            <ul class="list menu__list">
+              <li class="social__link"><a class="social__link decoration-link" href="">Instagram</a></li>
+              <li class="social__link"><a class="social__link decoration-link" href="">Twitter</a></li>
+              <li class="social__link"><a class="social__link decoration-link" href="">Facebook</a></li>
+              <li class="social__link"><a class="social__link decoration-link" href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>        
       </div>
     </header>
     <main>
