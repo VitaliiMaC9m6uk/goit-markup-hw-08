@@ -937,7 +937,7 @@ body {
   }
   .client__list {
     max-width: 210px;
-    width: 100%;
+    width: calc((100% - 30px) / 2);
   }
 }
 .client__title {

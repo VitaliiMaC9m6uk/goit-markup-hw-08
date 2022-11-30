@@ -14,7 +14,7 @@
         
         &__list{
           max-width: 210px;
-          width: 100%;
+          width:calc((100% - 1 * 30px) / 2);
         }
         // &__link{
             
