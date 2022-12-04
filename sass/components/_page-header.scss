@@ -1,15 +1,113 @@
-.nav__desktop,
-.head__list {
-  display: none;
+
+.mail-link,
+.tel-link,
+.site-nav .link {
+    color: $text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;    
+
+    transition: color 250ms $time-function;
+    }
+.site-nav .link{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+.icon-mobil {
+    height: 16px;
+    width: 10px;
+    }
+.icon-mail,
+.icon-mobil {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+
+    fill: $text-color;
+
+    transition: fill 250ms $time-function;
+    }
+.site-nav{
+    display: flex;      
+  }
+.link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $blue-color;
+    }
+    
+    .site-nav .link {
+    color: $title-color;
+    }
+    .icon-mail,
+    .icon-mobil {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+
+    fill: $text-color;
+
+    transition: fill 250ms $time-function;
+    }
+    .icon-mobil {
+    height: 16px;
+    width: 10px;
+    }
+
+    .link:hover,
+    .link:focus {
+    color: $blue-color;
+    }
+    .link:hover .icon-mail,
+    .link:hover .icon-mobil,
+    .link:focus .icon-mail,
+    .link:focus .icon-mobil {
+    fill: $blue-color;
+    }
 
 .head{
     padding:0;
     margin:0;
     border-bottom: 1px solid #ECECEC;
     background-color: $white-color;
+
+    &__logo{
+        display: flex;        
+    }   
     
+    &__link {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    }  
+    
+    &__list &__mail {
+    display: flex;
+    align-items: center;
+    } 
+  
+    
+    &__link:not(:last-child) {
+    margin-right: 50px;
+    }
+     
+  }  
   @media screen and (max-width: 767px) {
+    .nav__desktop,
+    .head__list     {
+    display: none;
+      }
     .icon-menu {
       width: 40px;
       height: 40px;
@@ -24,13 +122,12 @@
     fill: $text-color;
 
     transition: fill 250ms $time-function;
-}
-
-.icon-mobil {
-    height: 16px;
-    width: 10px;
-}
-
+    }
+    .head{
+      &__logo{
+        justify-content: space-between;
+        align-items: center;
+      }
     &__menu {
         cursor: pointer;
         display: inline-block;
@@ -38,12 +135,8 @@
         background-color: $white-color;
 
         fill: black;
-     }
-    &__logo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+     }  
+    
     &__backdrop{
        display: flex;
        position: fixed;
@@ -52,6 +145,7 @@
        width: 100%;
        height: 100%;
        background-color:$white-color;
+       z-index: 999;
 
        &.is-hidden {
             opacity: 0;
@@ -59,6 +153,7 @@
             transform: scale(0.9);
         }
      }
+    }
     .menu__btn-close{
       display: flex;
       align-items: center;
@@ -87,13 +182,16 @@
     
     .site-nav .link {
     color: $title-color;
-}
+    }
     
     .menu__container{
       width: 100%;
       padding:48px 40px;
     }
     .menu__mail-phone{
+      position: fixed;
+      bottom:134px ;
+      left:40px;
       margin: 0;
       padding: 0;
 
@@ -120,7 +218,7 @@
     }
     .menu__section-list{
       margin: 0;
-      margin-bottom: 306px;
+      
       padding: 0;
     }
     .menu__link:not(:last-child){
@@ -142,6 +240,8 @@
     }
     .menu__list{
       display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
       gap:10px;
     }
     .social__link:not(:last-child){
@@ -157,9 +257,51 @@
       color: $blue-color;
     }
   }
-  
+@media screen and (min-width:768px) and (max-width:1199px){
+  .head{
+    
+    &__logo{
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__container {
+    display: flex;
+    justify-content: space-between;
+    } 
+  }
+  .mail-menu{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      padding: 0;
+      justify-content: center;
+    }
+  .logo{
+    margin-right:88px ;
+  }
+}
+@media screen and (min-width:1200px){
+  .head{
+  &__list &__mail:not(:last-child) {
+    margin-right: 50px;
+     }
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__container{
+    display: flex;
+    justify-content: space-between;
+  }
+    }
+  .mail-link,
+  .tel-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 @media screen and (min-width: 768px) {
+  .head__backdrop,
   .head__menu {
     display: none;
   }

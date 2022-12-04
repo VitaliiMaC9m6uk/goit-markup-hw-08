@@ -5,7 +5,11 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;   
-
+    @media screen and (min-width:1200px){
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
     &--blue {
     color: $blue-color;
     }

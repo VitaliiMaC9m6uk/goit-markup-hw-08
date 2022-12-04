@@ -1,3 +1,66 @@
+@media screen and (max-width:1199px){
+    .footer{
+        &__adress{
+            letter-spacing: 0.03em;
+        }
+        &__mail{
+            letter-spacing: 0.03em;
+        }
+        &__tel{
+            letter-spacing: 0.03em;
+        }
+
+    }
+    .mail:not(:last-child) {
+    margin-bottom: 8px;
+    }
+    .feedback-mail{
+        margin-bottom: 20px;
+    }
+    .feedback-mail .form-fild {
+    max-width: 450px;
+    width: 100%;
+    }
+}
+@media screen and (min-width:1200px){
+    .footer{
+        &__footer .mail:not(:last-child) {
+        margin-bottom: 9px;
+        }
+        &__title{
+            margin: 0 0 20px 0;
+        }
+        &__address {
+        display: flex;
+        align-items: baseline;
+        }
+        &__social {
+        margin-left: 70px;
+        margin-right: 93px;
+        }
+        &__feedback {
+        display: flex;
+        align-items: flex-end;
+        }
+    }
+    .action{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .feedback-mail{
+        margin-right: 12px;
+    }
+    .feedback-mail .form-fild {    
+    width: 358px;
+    }
+    .form-footer{
+        margin-left: auto;
+    }
+}
 .footer{    
     @media screen and (max-width:767px){
         .address-mail,
@@ -19,6 +82,34 @@
             margin-right: auto;
         }
     }
+    @media screen and (min-width:768px) and (max-width:1199px){
+        
+        &__address{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:165px;
+            row-gap: 60px;
+        }
+        &__btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__social,
+        .address-mail{
+            text-align: center;
+        }
+        .form-footer{
+            display: flex;
+            
+        }
+        .feedback-mail .form-fild{
+            width:450px;
+        }
+        .feedback-mail{
+            text-align: center;
+        }
+    }
     background-color: $bg-color;
 
     padding-top: 60px;
@@ -26,23 +117,18 @@
 
     &__adress {
     color: $white-color;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    line-height: 1.71;    
     }
     &__mail{
     color: $footer-mail-color;
     line-height: 1.71;
-    display: inline-block;
-    letter-spacing: 0.03em;
+    display: inline-block;    
     }
     &__tel{
     color: $footer-mail-color;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    line-height: 1.71;    
     }
-    .mail:not(:last-child) {
-    margin-bottom: 8px;
-    }
+    
     &__title {
     font-weight: 700;
     font-size: 14px;
@@ -86,7 +172,14 @@
     width: 20px;
     fill: $white-color;
   }
-  .link-footer {
+  
+.list-footer{    
+    border-radius: 50%;
+  }
+.list-footer:not(:last-child) {
+    margin-right: 10px;
+}
+.link-footer {
     border-radius: 50%;
     margin: 0;
     padding: 0;
@@ -98,12 +191,6 @@
 
     transition: background-color 250ms $time-function;
   }
-  .list-footer{    
-    border-radius: 50%;
-  }
-  .list-footer:not(:last-child) {
-    margin-right: 10px;
-}
 .link-footer {
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -116,9 +203,7 @@
 
     margin-bottom: 20px;
 }
-.feedback-mail .form-fild {
-    max-width: 450px;
-    width: 100%;
+.feedback-mail .form-fild {    
     height: 48px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -134,9 +219,7 @@
 }
 .feedback-mail {
     display: flex;
-    flex-direction: column;
-
-    margin-bottom: 20px;
+    flex-direction: column;    
 }
 .icon-send {
     height: 24px;

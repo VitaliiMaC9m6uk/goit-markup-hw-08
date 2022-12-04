@@ -1,19 +1,34 @@
 .team {
-  background-color: #f5f4fa;
-  @media screen and (max-width:767px){
+  @media screen and (max-width:1199px){
     padding-top: 60px;
     padding-bottom: 60px;
+    
+    &__title{
+      font-size: 28px;
+    }
+    .action{
+      padding-bottom: 24px;
+    }
+  }
 
-    .one-of-team:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (min-width:1200px){
+    &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+    &__information {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
   }
-  }
-  
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px; 
 
   &__title {
     color: $title-color;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
@@ -22,6 +37,7 @@
     margin-bottom: 50px;
   }
   &__text {
+    margin: 0;
     margin-bottom: 16px;
   }
   &__text,
@@ -37,6 +53,7 @@
 
     margin-bottom: 10px;
   }
+}
 
   .one-of-team {
     background-color: $white-color;
@@ -51,7 +68,7 @@
     display: flex;
     padding: 0;
     margin: 0;
-    padding-bottom: 24px;
+    
     list-style: none;
     margin-left: auto;
     margin-right: auto;
@@ -93,5 +110,21 @@
     justify-content: center;
 
     transition: background-color 250ms $time-function;
+  }
+
+@media screen and (max-width:767px){
+    
+    .one-of-team:not(:last-child) {
+    margin-bottom: 30px;
+    }
+  }
+@media screen and (min-width:768px) and (max-width:1199px){
+  .team{
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
   }
 }

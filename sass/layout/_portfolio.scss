@@ -1,13 +1,54 @@
+@media screen and (max-width:1199px){
+    .btn-port {
+    margin-bottom: 40px;
+    
+    display: flex;
+	gap:15px 8px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+    }
+}
 .collection{
-    padding-top:60px;
-    padding-bottom:60px;
+    @media screen and (max-width:1199px){
+        padding-top:60px;
+        padding-bottom:60px;
+
+        &__border{
+            max-width: 450px;
+        }
+    
+    }
+    @media screen and (min-width:1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        }
+    .btn-port {
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+        }   
+    .list-btn:not(:last-child) {
+    padding-right: 8px;
+        } 
+    .decoration-link {
+    text-decoration: none;
+        }
+    }
 
     &__link {
-
             transition: box-shadow 250ms $time-function;
         }
+    @media screen and (max-width:767px){
+    
     &__link:not(:last-child){
         margin-bottom:30px;
+        }
     }
     &__link:hover,
     &__link:focus {
@@ -22,8 +63,7 @@
                 transform 250ms $time-function;
             transform: translateY(0);
     }
-    &__border {
-            max-width: 450px;
+    &__border {            
             border: 1px solid #EEEEEE;
             background: #FFFFFF;
             border-top-color: transparent;
@@ -96,14 +136,7 @@
         background-color 250ms $time-function,
         box-shadow 250ms $time-function;
 }
-.btn-port {
-    margin-bottom: 40px;
-    
-    display: flex;
-	gap:15px 8px;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-}
+
 .button-port.current,
 .button-port:hover,
 .button-port:focus {
@@ -120,4 +153,20 @@
     position: relative;
 
     overflow: hidden;
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .btn-port{
+        justify-content: center;
+    }
+    .collection{ 
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }   
+    &__link{
+        max-width: 354px;
+        width: calc((100% - 1 * 30px) / 2);
+    }
+  }
 }

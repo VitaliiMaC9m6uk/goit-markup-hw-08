@@ -1,7 +1,10 @@
-@media screen and (min-width:100px){
+
     .service{
-        padding-top: 118px;
-        padding-bottom:118px;
+        @media screen and (max-width:1199px){
+            padding-top: 118px;
+            padding-bottom:118px;
+        }
+        
 
         &__titel{
             color: $white-color;
@@ -14,6 +17,10 @@
 
             margin-top: 0;
             margin-bottom: 30px;
+            @media screen and (min-width:1200px){
+                font-size:44px;
+                line-height: 1.36;
+            }
         }
         &__bg {
             max-width: 480px;
@@ -30,6 +37,15 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            @media screen and (min-width:768px){                
+                max-width: 768px;
+            }
+            
+            @media screen and (min-width:1200px){
+                max-width: 1600px;
+                padding-top: 200px;
+                padding-bottom: 200px;
+            }
         }
         &__button {
             display: inline-block;
@@ -47,10 +63,12 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 1.88;
+            @media screen and (min-width:1200px){
+                min-width: 216px;
+            }
         }
         &__block {
             display: flex;
             flex-direction: column;
         }
     }
-}

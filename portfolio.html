@@ -21,7 +21,7 @@
           <a class="decoration-link logo" href="./index.html"
             ><span class="logo--blue">Web</span><span class="logo--black">Studio</span></a
           >
-          <button class="head__menu"  type="bytton"><svg class="icon-menu">
+          <button class="head__menu js-open-menu"  type="button" js-open-menu><svg class="icon-menu">
             <use href="./images/icons.svg#icon-menu-page-header"></use>
           </svg></button>          
           <nav class="nav__desktop">
@@ -57,9 +57,9 @@
           </li>
         </ul>
       </div>
-      <div class="head__backdrop is-hidden">
+      <div class="head__backdrop is-hidden js-menu-container" js-menu-container>
         <div class="menu__container">
-          <button class="menu__btn-close" type="button" data-modal-close>
+          <button class="menu__btn-close js-close-menu" type="button" >
             <svg class="menu__icon-close">
               <use href="./images/icons.svg#icon-close-button"></use>
             </svg>
@@ -67,7 +67,7 @@
           <nav class="">
             <ul class="menu__section-list">
               <li class="list menu__link">
-                <a class="menu__section decoration-link current" href="./index.html">Студія</a>
+                <a class="menu__section decoration-link " href="./index.html">Студія</a>
               </li>
               <li class="list menu__link">
                 <a class="menu__section decoration-link current" href="./portfolio.html">Портфоліо</a>
@@ -424,5 +424,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
