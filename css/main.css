@@ -936,6 +936,7 @@ summary {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -994,12 +995,6 @@ body {
   color: #2196F3;
 }
 
-@media screen and (max-width: 1199px) {
-  .service {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-}
 .service__titel {
   color: #FFFFFF;
   font-weight: 900;
@@ -1019,18 +1014,38 @@ body {
 }
 .service__bg {
   max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-color: #C4C4C4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .service__bg {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/service/img_480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service/img_480.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .service__bg {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/service/img_960.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service/img_960.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .service__bg {
     max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/service/img_768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service/img_768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .service__bg {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/service/img_1536.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service/img_1536.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1038,6 +1053,14 @@ body {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/service/img_1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service/img_1600.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .service__bg {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/service/img_3200.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/service/img_3200.jpg);
   }
 }
 .service__button {
@@ -1260,6 +1283,21 @@ body {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+@media screen and (max-width: 767px) {
+  .one-of-team {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .one-of-team {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .one-of-team {
+    width: 270px;
+  }
 }
 
 .action {
@@ -1855,5 +1893,20 @@ body {
   .collection__link {
     max-width: 354px;
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (max-width: 767px) {
+  .image-description {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .image-description {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .image-description {
+    width: 370px;
   }
 }/*# sourceMappingURL=main.css.map */

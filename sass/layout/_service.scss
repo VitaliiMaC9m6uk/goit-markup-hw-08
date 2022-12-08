@@ -1,8 +1,8 @@
 
     .service{
         @media screen and (max-width:1199px){
-            padding-top: 118px;
-            padding-bottom:118px;
+            // padding-top: 118px;
+            // padding-bottom:118px;
         }
         
 
@@ -24,27 +24,64 @@
         }
         &__bg {
             max-width: 480px;
+            padding-top: 118px;
+            padding-bottom:118px;
     
             margin-left: auto;
             margin-right: auto;
-            background-color: #C4C4C4;
-            background-image:
-                linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../);
+            background-color: #C4C4C4;            
         
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            @media screen and (max-width:767px){
+                background-image: linear-gradient(to right,
+                     rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)),
+                url(../images/service/img_480.jpg);
+                @media screen and (min-device-pixel-ratio:2),
+                    (min-resolution:192dpi),
+                    (min-resolution:2dppx) {
+                        background-image: linear-gradient(to right,
+                     rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)),
+                url(../images/service/img_960.jpg);
+                    }
+            }
             @media screen and (min-width:768px){                
                 max-width: 768px;
+
+                background-image: linear-gradient(to right,
+                     rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)),
+                url(../images/service/img_768.jpg);
+                @media screen and (min-device-pixel-ratio:2),
+                    (min-resolution:192dpi),
+                    (min-resolution:2dppx) {
+                        background-image: linear-gradient(to right,
+                     rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)),
+                url(../images/service/img_1536.jpg);
+                    }
             }
             
             @media screen and (min-width:1200px){
                 max-width: 1600px;
                 padding-top: 200px;
                 padding-bottom: 200px;
+
+                background-image: linear-gradient(to right,
+                     rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)),
+                url(../images/service/img_1600.jpg);
+                @media screen and (min-device-pixel-ratio:2),
+                    (min-resolution:192dpi),
+                    (min-resolution:2dppx) {
+                        background-image: linear-gradient(to right,
+                     rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)),
+                url(../images/service/img_3200.jpg);
+                    }
             }
         }
         &__button {
@@ -72,3 +109,4 @@
             flex-direction: column;
         }
     }
+ 
