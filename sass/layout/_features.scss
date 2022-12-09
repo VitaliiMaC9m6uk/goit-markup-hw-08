@@ -16,7 +16,11 @@
         width: 270px;
     }
   }
-
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+  }
   &__icon {
     height: 70px;
     width: 70px;
@@ -41,13 +45,16 @@
 
     margin-top: 0;
     margin-bottom: 10px;
+    @media screen and (min-width:768px){
+      text-align: left;
+    }
   }
   &__text {
     line-height: 1.71;
     letter-spacing: 0.03em;
 
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 
     
   }
@@ -60,8 +67,8 @@
         }
         &__list{
             display: flex;
-            flex-wrap: wrap;
-            gap:30px ;
+            
+            
         }
     }
 }
